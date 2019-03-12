@@ -13,11 +13,3 @@ def get_price_of_quote(quote):
         links.extend(span.findAll('span'))
     price_of_quote =links[3].find(text=True)
     return price_of_quote
-
-while True:
-    try:
-        quote = 'vvar3'
-        print(get_price_of_quote(quote))
-        time.sleep(1)
-    except:
-        time.sleep(3)
